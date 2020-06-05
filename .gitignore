@@ -1,0 +1,7 @@
+myapp
+outputfiles/*
+lib/__pycache__
+!outputfiles/placeholder.txt
+inputfiles/*
+!inputfiles/input_per.csv
+!inputfiles/input_per.pcap
