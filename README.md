@@ -21,7 +21,8 @@ These programs can be useful if you need to estimate PER from your measurements,
 Method 3 is a combination of Method 1 and Method 2. It seems to be the best working algorithm so far. 
 
 ### Flaws of the Algorithms
-Each method has certain advantages and disadvantages in estimating the PER: 
+Each method has certain advantages and disadvantages in estimating the PER:
+
 **Method 1**: 
 - Detection of loss packets is prone to error if the packet with PSN 4095 is also lost
 - If the gap between the PSN of previous and current packets is > 100, it won't count them as loss packets (need to manually have a look at the data trace to find out what happened)
@@ -61,7 +62,7 @@ Please use the command below to extract the Time and PSN data from your PCAP tra
 The result is saved in the directory below with the corresponding date (YYYYMMDD_HHMMSS):
 *outputfiles/*
 
-**_lossPkts**: The missing PSNs in the data trace (= PSNs of the loss packets)
+***_lossPkts**: The missing PSNs in the data trace (= PSNs of the loss packets)
 
 ***_PER**: Packet error rate results (along with total number of packets and total number of lost packets per second)
 
